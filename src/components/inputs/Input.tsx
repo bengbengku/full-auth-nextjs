@@ -43,7 +43,7 @@ const Input: React.FunctionComponent<InputProps> = (props) => {
             borderColor: `${error ? '#ED4337' : ''}`,
           }}
         />
-        {/*---Show and hide password---*/}
+        {/*---Show and hide password here---*/}
         {(name == 'password' || name == 'confirmPassword') && (
           <div
             className='absolute top-2.5 right-2 text-xl text-gray-700 cursor-pointer'
