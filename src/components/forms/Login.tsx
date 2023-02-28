@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import Input from "../inputs/Input";
+import Input from '../inputs/Input';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -51,14 +51,14 @@ const LoginForm: React.FunctionComponent<ILoginFormProps> = (props) => {
     }
   };
 
-  const Input = dynamic(() => import('../inputs/Input'), {
-    ssr: false,
-    loading: () => (
-      <div className='flex justify-center'>
-        <BeatLoader color='#59E4A8' />
-      </div>
-    ),
-  });
+  // const Input = dynamic(() => import('../inputs/Input'), {
+  //   ssr: false,
+  //   loading: () => (
+  //     <div className='flex justify-center'>
+  //       <BeatLoader color='#59E4A8' />
+  //     </div>
+  //   ),
+  // });
 
   return (
     <div className='w-full px-12 py-4'>
